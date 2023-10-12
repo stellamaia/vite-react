@@ -8,11 +8,19 @@ function StateTitle({ cor }) {
     const [text, setText] = useState("Um titulo do estado inicial")
     //usando o useState que vai mostrar como nosso estado inicializa
 
+
+    const [inputText, setInputText] = useState("");
+
+    function clicou() {
+        setText(inputText);
+    }
     return (
         <div>
             <h1 style={{ color: cor }}>{text}</h1>
-            <button onClick={() => {setText("Mudei via botão")}}>Mudar</button>
-
+            <input value={inputText} onChange={(e) => { setInputText(e.target.value) }} type="text" />
+            {/* é atribuído a uma função de callback que é acionada toda vez que o valor do campo de entrada é alterado */}
+            <button onClick={clicou}>Mudar</button>
+            {/* a ação clicou vai ser chamada em uma function  */}
         </div>
     )
 }
