@@ -1,10 +1,13 @@
 import Menu from "./Menu"
+import TodoList from "../TodoList"
 
-function Home(){
-    return(
+function Home() {
+    return (
         <div>
+            <Menu />
             <h1>Home</h1>
-            <Menu/>
+          <TodoList/>
+
         </div>
     )
 }
