@@ -1,10 +1,11 @@
 import Menu from "./Menu"
 
-function Contato(){
-    return(
+function Contato() {
+    return (
         <div>
+            <Menu />
             <h1>Contato</h1>
-            <Menu/>
+
         </div>
     )
 }
