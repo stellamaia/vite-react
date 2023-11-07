@@ -63,6 +63,7 @@ button.add:hover {
     flex-flow: column wrap;
     width: 600px;
     margin: auto;
+
 }
 
 .item {
@@ -78,10 +79,12 @@ button.add:hover {
 }
 
 .item span {
+    text-align: start;
     width: 100%;
     color: white;
     margin-right: 10px;
     padding: 10px 15px;
+
 }
 
 .item.completo {
@@ -95,7 +98,7 @@ button.add:hover {
 }
 
 .item.completo span {
-
+    text-align: start;
     width: 100%;
     color: #4d506e;
     margin-right: 10px;
@@ -126,12 +129,26 @@ button.deleteAll {
     color: #ff004c;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 30%;
+
 }
 
 button.deleteAll:hover {
 
-    background: none;
+    background: #ff004c;
+    color: white;
     cursor: pointer;
+}
+
+.content-deleteAll {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    max-width: 100%;
 }
 
 @media screen and (max-width: 900px) {
