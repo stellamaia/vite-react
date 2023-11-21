@@ -60,10 +60,10 @@ function TodoList() {
                             ))
 
                     }
-<div className="content-deleteAll">
-<button className="deleteAll" onClick={() => { deleteAll([]) }}>Deletar Todas</button>
-</div>                </div>          
-                    
+                    <div className="content-deleteAll">
+                        <button className="deleteAll" onClick={() => { deleteAll([]) }}>Deletar Todas</button>
+                    </div>                </div>
+
 
             </div>
         </div>
